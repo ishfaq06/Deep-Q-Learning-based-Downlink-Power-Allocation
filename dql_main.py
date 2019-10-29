@@ -504,9 +504,6 @@ def normalized_check_max():
         if np.sum(P_macro_subband[i][0:N_subband]) >2.41:
             P_macro_subband[i]=(0.8*np.ones(N_subband)).tolist()
 
-
-
-
     return
 
 
@@ -601,21 +598,6 @@ def optimize_resource_iwf():
 
 
     print("p_m   ", p_m)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     return
 
@@ -1778,11 +1760,3 @@ finally:
     np.save("data_5c_3h_5p.npy", agent.memory.samples)
 
     print("total call vs corrected answer :", g_total_call,g_total_corrected)
-
-
-
-
-
-
-
-
