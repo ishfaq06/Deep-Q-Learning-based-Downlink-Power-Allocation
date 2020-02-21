@@ -1703,10 +1703,10 @@ actionCnt=ln_fl_comb*num_M
 print("actions    :",actionCnt)
 agent = Agent(stateCnt, actionCnt)
 ########################################################################################################################
-agent.brain.model.load_weights("dqn_5c_3h_5p.h5")
-agent.brain.model_.load_weights("dqn_5c_3h_5p.h5")
-RandomAgent.memory.samples = np.load("data_5c_3h_5p.npy").tolist()
-agent.steps=np.load("step_5c_3h_5p.npy").tolist()
+#agent.brain.model.load_weights("dqn_5c_3h_5p.h5")
+#agent.brain.model_.load_weights("dqn_5c_3h_5p.h5")
+#RandomAgent.memory.samples = np.load("data_5c_3h_5p.npy").tolist()
+#agent.steps=np.load("step_5c_3h_5p.npy").tolist()
 ########################################################################################################################
 
 
@@ -1737,7 +1737,7 @@ try:
 
     ########################################################################################################################
     #g_cntr=np.load("counter_v2_5c_3h_5p_lr1.npy").tolist()
-    data_set = np.load("data_set_5c.npz")
+    #data_set = np.load("data_set_5c.npz")
     g_data_len = len(data_set['arr_0'])
     g_data_x = data_set['arr_0'].tolist()
     g_data_y = data_set['arr_1'].tolist()
